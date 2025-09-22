@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int clave,n;
+    double Z;
+    cout<<"12 AMERICA DEL NORTE"<<endl;
+    cout<<"15 AMERICA CENTRAL"<<endl;
+    cout<<"18 AMERICA DEL SUR"<<endl;
+    cout<<"19 EUROPA"<<endl;
+    cout<<"23 ASIA"<<endl;
+    cout<<"25 AFRICA"<<endl;
+    cout<<"29 OCEANIA"<<endl;
+    cout<<"CLAVE: "<<endl;
+    cin>>clave;
+    cout<<"NUMIN: "<<endl;
+    cin>>n;
+    switch (clave){
+        case 12: Z=2*n;
+        break;
+        case 15: Z=2.2*n;
+        break;
+        case 18: Z=4.5*n;
+        break;
+        case 19: Z=3.5*n;
+        break;
+        case 23: Z=6*n;
+        break;
+        case 25: Z=6*n;
+        break;
+        case 29: Z=5*n;
+        break;
+        default: cout<<"Error";
+    }
+    cout<<Z;
+    return 0;
+}
