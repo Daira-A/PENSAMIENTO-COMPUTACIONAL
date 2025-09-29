@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 int main (){
-    int A,B,operacion, R;
+    int operacion;
+    double A,B,R;
     cout<<"1 suma"<<endl;
     cout<<"2 resta"<<endl;
     cout<<"3 multiplicacion"<<endl;
@@ -23,4 +24,5 @@ int main (){
     }
     cout<<R;
     return 0;
+
 }
