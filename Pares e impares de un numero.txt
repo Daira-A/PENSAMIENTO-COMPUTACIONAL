@@ -1,0 +1,22 @@
+//Pares e impares de un numero
+#include <iostream>
+using namespace std;
+int main (){
+    int a,d,pares,impares;
+    cin>>a;
+    pares=0;
+    impares=0;
+    while(a>0){
+        d=a%10;
+        if(d%2==0){
+            pares++;
+        }
+        else{
+            impares++;
+        }
+        a/=10;
+    }
+    cout<<pares<<endl;
+    cout<<impares<<endl;
+    return 0;
+}

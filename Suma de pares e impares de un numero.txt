@@ -1,0 +1,22 @@
+//Suma de pares e impares de un numero
+#include <iostream>
+using namespace std;
+int main (){
+    int n,d,sumapares,sumaimpares;
+    cin>>n;
+    sumapares=0;
+    sumaimpares=0;
+    while(n>0){
+        d=(n-(n/10)*10);
+        if(d%2==0){
+            sumapares+=d;
+        }
+        else{
+            sumaimpares+=d;
+        }
+        n/=10;
+    }
+    cout<<sumapares<<endl;
+    cout<<sumaimpares<<endl;
+    return 0;
+}
